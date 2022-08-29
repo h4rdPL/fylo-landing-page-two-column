@@ -5,6 +5,16 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    &__image {
+        @media (min-width:$laptop) {
+            width: 50%;         
+        }
+    }
+    &__subscription {
+        @media (min-width: $laptop) {
+            
+        }
+    }
     &__paragraph {
         font-size: 15px;
     }
@@ -13,6 +23,9 @@
         flex-direction: column;
         width: 100%;
         grid-gap: 1rem;
+        @media (min-width: $laptop) {
+            flex-direction: row;
+        }
     }
     &__input {
         padding: .7rem;
@@ -25,5 +38,9 @@
         font-family: $primaryFont;
         font-weight: bold;
         border: none;
+    }
+
+    @media (min-width:$laptop) {
+        flex-direction: row;
     }
 }
