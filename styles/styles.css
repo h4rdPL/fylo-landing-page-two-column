@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -18,4 +19,62 @@ img {
 
 textarea {
   white-space: revert;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.fylo {
+  padding: 0 1.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.menu__logo {
+  width: 30%;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  width: 100%;
+}
+.menu__link {
+  text-decoration: none;
+  color: hsl(243deg, 87%, 12%);
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero__paragraph {
+  font-size: 15px;
+}
+.hero__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-gap: 1rem;
+}
+.hero__input {
+  padding: 0.7rem;
+  border: 1px solid hsl(238deg, 22%, 44%);
+}
+.hero__btn {
+  padding: 0.7rem;
+  background: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */

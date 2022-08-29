@@ -1,0 +1,20 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 1rem;
+    &__logo {
+        width: 30%;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        grid-gap: 1rem;
+        width: 100%;
+    }
+       &__link {
+        text-decoration: none;
+        color: $veryDarkBlue;
+    }
+}

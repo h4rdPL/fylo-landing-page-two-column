@@ -13,10 +13,12 @@
 
 // layout 
 
-// @import "layout/";
+@import "layout/_layout.scss";
 
-// sections 
+// components
 
+@import "components/organisms/_navigation.scss";
+@import "components/organisms/_hero.scss";
 // @import "sections/all";
 
 
