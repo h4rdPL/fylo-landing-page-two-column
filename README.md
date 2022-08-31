@@ -18,7 +18,7 @@ Installing
 ======
 
 ```
-1. Download or clone repo → gh repo clone h4rdpl/qr-code-frontend-mentor
+1. Download or clone repo → gh repo clone h4rdpl/fylo-landing-page-two-column
 ```
 
 ```
@@ -27,7 +27,7 @@ Installing
 
 Or
 ```
-Copy&Open live link: https://h4rdpl.github.io/qr-code-frontend-mentor/
+Copy&Open live link: https://h4rdpl.github.io/fylo-landing-page-two-column
 ```
 
 Design
