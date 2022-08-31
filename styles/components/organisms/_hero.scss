@@ -1,5 +1,5 @@
 .hero {
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +8,20 @@
   &__image {
     @media (min-width: $laptop) {
       width: 50%;
+      //   border: 1px solid red;
     }
   }
   &__subscription {
+    font-weight: bold;
     @media (min-width: $laptop) {
-      max-width: 25%;
+      max-width: 33%;
+      font-size: 1.5rem;
       text-align: left;
     }
   }
   &__paragraph {
     font-size: 15px;
+    color: $veryDarkBlue;
   }
   &__form {
     display: flex;
@@ -42,9 +46,15 @@
     font-family: $primaryFont;
     font-weight: bold;
     border: none;
+    cursor: pointer;
+    @media (min-width: $laptop) {
+      width: 300px;
+    }
   }
 
   @media (min-width: $laptop) {
     flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 2rem;
   }
 }

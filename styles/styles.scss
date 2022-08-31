@@ -1,17 +1,17 @@
-// abstracts 
+// abstracts
 
 @import "./abstracts/variables";
 
-// core 
+// core
 
 @import "core/reset";
 @import "core/typography";
 
-// components 
+// components
 
 // @import "components/all";
 
-// layout 
+// layout
 
 @import "layout/_layout.scss";
 
@@ -19,6 +19,5 @@
 
 @import "components/organisms/_navigation.scss";
 @import "components/organisms/_hero.scss";
+@import "components/organisms/_productive.scss";
 // @import "sections/all";
-
-
