@@ -34,6 +34,21 @@ body {
   padding: 0 1.5rem;
 }
 
+.btn {
+  padding: 0.7rem;
+  background: hsl(224deg, 93%, 58%);
+  color: hsl(240deg, 75%, 98%);
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  padding: 0.7rem;
+  border: 1px solid hsl(238deg, 22%, 44%);
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -105,21 +120,13 @@ body {
     flex-direction: row;
   }
 }
-.hero__input {
-  padding: 0.7rem;
-  border: 1px solid hsl(238deg, 22%, 44%);
-}
 @media (min-width: 1440px) {
   .hero__input {
     width: 100%;
   }
 }
 .hero__btn {
-  padding: 0.7rem;
-  background: hsl(224deg, 93%, 58%);
-  color: hsl(240deg, 75%, 98%);
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
   border: none;
   cursor: pointer;
 }
@@ -211,4 +218,22 @@ body {
 }
 .quotes__company {
   font-size: 12px;
+}
+
+.access {
+  background-color: hsl(238deg, 22%, 44%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "open Sans", sans-serif;
+  padding: 4rem 5rem;
+}
+.access__form {
+  display: flex;
+  grid-gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+.access {
+  background-color: $desaturatedBlue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $secondaryFont;
+  padding: 4rem 5rem;
+  &__form {
+    display: flex;
+    grid-gap: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+  }
+}

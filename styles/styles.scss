@@ -17,7 +17,14 @@
 
 // components
 
+// atoms
+
+@import "components/atoms/_button.scss";
+@import "components/atoms/_input.scss";
+
+// organisms
+
 @import "components/organisms/_navigation.scss";
 @import "components/organisms/_hero.scss";
 @import "components/organisms/_productive.scss";
-// @import "sections/all";
+@import "components/organisms/_access.scss";
