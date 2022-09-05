@@ -276,7 +276,7 @@ body {
 }
 @media (min-width: 1440px) {
   .access__paragraph {
-    width: 70%;
+    width: 45%;
   }
 }
 .access__input {
