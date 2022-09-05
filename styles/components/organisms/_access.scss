@@ -8,10 +8,38 @@
   text-align: center;
   font-family: $secondaryFont;
   padding: 4rem 5rem;
+  font-size: 15px;
+  @media (min-width: $laptop) {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  &__paragraph {
+    @media (min-width: $laptop) {
+      width: 70%;
+    }
+  }
+  &__input {
+    width: 100%;
+    @media (min-width: $laptop) {
+      width: 80%;
+    }
+  }
+  &__btn {
+    width: 100%;
+
+    @media (min-width: $laptop) {
+      width: 40%;
+    }
+  }
   &__form {
     display: flex;
     grid-gap: 0.5rem;
     flex-direction: column;
     width: 100%;
+    @media (min-width: $laptop) {
+      width: 45%;
+    }
   }
 }
