@@ -316,4 +316,54 @@ body {
   .access__form {
     width: 45%;
   }
+}
+
+.footer {
+  background-color: hsl(243deg, 87%, 12%);
+  color: #fff;
+  font-family: "open Sans", sans-serif;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.footer__logo {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  align-self: flex-end;
+}
+.footer__about {
+  grid-column: 1/-1;
+}
+@media (min-width: 1440px) {
+  .footer__about {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+.footer__phone {
+  grid-column: 1/-1;
+}
+@media (min-width: 1440px) {
+  .footer__phone {
+    grid-row: 2/3;
+  }
+}
+.footer__contact {
+  grid-column: 1/-1;
+}
+@media (min-width: 1440px) {
+  .footer__contact {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+}
+.footer__icon img {
+  padding-right: 1rem;
+}
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+.footer__logo {
+  fill: #fff;
 }/*# sourceMappingURL=styles.css.map */

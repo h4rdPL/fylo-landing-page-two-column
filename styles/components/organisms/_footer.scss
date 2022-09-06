@@ -1,0 +1,47 @@
+.footer {
+  background-color: $veryDarkBlue;
+  color: #fff;
+  font-family: $secondaryFont;
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  &__logo {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-self: flex-end;
+  }
+  &__about {
+    grid-column: 1/-1;
+    @media (min-width: $laptop) {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+  }
+  &__phone {
+    grid-column: 1/-1;
+    @media (min-width: $laptop) {
+      grid-row: 2/3;
+    }
+  }
+  &__contact {
+    grid-column: 1/-1;
+    @media (min-width: $laptop) {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+  }
+
+  &__icon {
+    img {
+      padding-right: 1rem;
+    }
+  }
+  &__item {
+    margin-bottom: 0.5rem;
+  }
+  &__logo {
+    fill: #fff;
+  }
+}
