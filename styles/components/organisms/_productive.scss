@@ -21,6 +21,16 @@
   &__waves {
     width: 100%;
     margin-bottom: -5px;
+    &-mobile {
+      @media (min-width: $laptop) {
+        display: none;
+      }
+    }
+    &-desktop {
+      @media (max-width: $laptop) {
+        display: none;
+      }
+    }
   }
   &__header {
     font-size: 18px;
@@ -73,7 +83,7 @@
 }
 .quotes {
   background-color: #fff;
-  margin: 1rem;
+  margin: 1.5rem 0;
   border-radius: 5px;
   text-align: left;
   display: flex;

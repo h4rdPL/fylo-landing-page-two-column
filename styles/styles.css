@@ -169,6 +169,16 @@ body {
   width: 100%;
   margin-bottom: -5px;
 }
+@media (min-width: 1440px) {
+  .productive__waves-mobile {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .productive__waves-desktop {
+    display: none;
+  }
+}
 .productive__header {
   font-size: 18px;
 }
@@ -222,7 +232,7 @@ body {
 
 .quotes {
   background-color: #fff;
-  margin: 1rem;
+  margin: 1.5rem 0;
   border-radius: 5px;
   text-align: left;
   display: flex;
