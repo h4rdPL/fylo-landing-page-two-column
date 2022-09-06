@@ -146,6 +146,7 @@ body {
 .productive {
   position: relative;
   min-width: 100%;
+  min-height: 70vh;
   margin: 0;
   background-color: hsl(240deg, 75%, 98%);
   text-align: center;
