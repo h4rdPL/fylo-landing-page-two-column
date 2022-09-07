@@ -42,6 +42,10 @@ body {
   font-weight: bold;
   border: none;
   cursor: pointer;
+  transition: opacity 0.3s ease-out;
+}
+.btn:hover {
+  opacity: 0.7;
 }
 
 .input {
@@ -216,6 +220,7 @@ body {
   color: hsl(170deg, 45%, 43%);
   font-weight: bold;
   position: relative;
+  transition: opacity 0.4s ease-in-out;
 }
 @media (min-width: 768px) {
   .productive__link {
@@ -241,6 +246,9 @@ body {
   background: url("../../../images/icon-arrow.svg");
   background-repeat: no-repeat;
   transform: translateY(-50%);
+}
+.productive__link:hover {
+  opacity: 0.8;
 }
 
 .quotes {
@@ -346,6 +354,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.footer__link:hover {
+  color: hsl(238deg, 22%, 44%);
+}
 .footer__logo {
   grid-column: 1/-1;
   grid-row: 1/2;
@@ -403,9 +419,16 @@ body {
 }
 .footer__item {
   margin-bottom: 0.5rem;
+  align-self: center;
+  cursor: pointer;
 }
 .footer__item-icon {
   width: 45px;
+  transition: all 0.3s ease-in;
+}
+.footer__item-icon:hover {
+  filter: invert(10%) sepia(21%) saturate(2878%) hue-rotate(346deg);
+  transform: scale(0.8);
 }
 .footer__logo {
   fill: #fff;
