@@ -8,23 +8,17 @@ const pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 const heroValidate = (e) => {
   e.preventDefault();
   const email = emailInput.value;
-  if (email.match(pattern)) {
-    heroError.classList.remove("active");
-  } else {
-    heroError.classList.add("active");
-    console.log("nooo");
-  }
+  email.match(pattern)
+    ? heroError.classList.remove("active")
+    : heroError.classList.add("remove");
 };
 
 const accessValidate = (e) => {
   e.preventDefault();
   const email = emailInput.value;
-  if (email.match(pattern)) {
-    accessError.classList.remove("active");
-  } else {
-    accessError.classList.add("active");
-    console.log("nooo");
-  }
+  email.match(pattern)
+    ? accessError.classList.remove("active")
+    : accessError.classList.add("active");
 };
 
 heroSubmitBtn.addEventListener("click", heroValidate);
