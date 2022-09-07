@@ -15,6 +15,10 @@
     justify-content: space-between;
   }
 
+  &__validation {
+    display: none;
+    color: red;
+  }
   &__paragraph {
     @media (min-width: $laptop) {
       width: 45%;
@@ -26,9 +30,9 @@
       width: 80%;
     }
   }
+
   &__btn {
     width: 100%;
-
     @media (min-width: $laptop) {
       width: 40%;
     }
@@ -42,4 +46,7 @@
       width: 45%;
     }
   }
+}
+.active {
+  display: block;
 }

@@ -58,12 +58,21 @@
           </p>
           <form class="hero__form">
             <input
-              type="text"
-              placeholder="Enter your email..."
+              type="email"
               class="hero__input input"
+              id="email"
+              placeholder="Enter your email..."
             />
-            <input type="button" value="Get Started" class="hero__btn btn" />
+            <input
+              type="submit"
+              class="hero__btn btn"
+              id="hero__submitBtn"
+              value="Get Started"
+            />
           </form>
+          <span class="hero__validation" id="hero__error">
+            Please check your email
+          </span>
         </div>
       </section>
       <img
@@ -133,12 +142,17 @@
           <input
             type="text"
             class="access__input input"
+            id="email"
             placeholder="email@example.com"
           />
+          <span class="access__validation" id="access__error">
+            Please check your email
+          </span>
           <input
             type="button"
-            value="Get Started for free"
             class="access__btn btn"
+            id="access__submitBtn"
+            value="Get Started for free"
           />
         </form>
       </section>
@@ -198,5 +212,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </div>
+    <script src="./js/validation.js"></script>
   </body>
 </html>
