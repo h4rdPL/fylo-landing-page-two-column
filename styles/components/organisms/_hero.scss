@@ -8,7 +8,6 @@
   @media (min-width: $laptop) {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 2rem;
   }
   &__validation {
     font-size: 12px;
@@ -18,7 +17,6 @@
   &__image {
     @media (min-width: $laptop) {
       width: 50%;
-      //   border: 1px solid red;
     }
   }
   &__subscription {

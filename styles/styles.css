@@ -30,8 +30,8 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-.tmemplate {
-  padding: 0 2rem;
+.template {
+  padding: 0 4rem;
 }
 
 .btn {
@@ -57,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem 3rem;
 }
 .menu__logo {
   width: 30%;
@@ -98,7 +99,6 @@ body {
   .hero {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 0 2rem;
   }
 }
 .hero__validation {
@@ -163,7 +163,6 @@ body {
   position: relative;
   min-width: 100%;
   min-height: 70vh;
-  margin: 0;
   background-color: hsl(240deg, 75%, 98%);
   text-align: center;
 }
@@ -172,7 +171,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .productive__container {
@@ -311,7 +310,7 @@ body {
 }
 @media (min-width: 1440px) {
   .access__paragraph {
-    width: 45%;
+    width: 46%;
   }
 }
 .access__input {
