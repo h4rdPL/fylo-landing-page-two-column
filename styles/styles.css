@@ -322,40 +322,59 @@ body {
   background-color: hsl(243deg, 87%, 12%);
   color: #fff;
   font-family: "open Sans", sans-serif;
-  padding: 4rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 .footer__logo {
   grid-column: 1/-1;
   grid-row: 1/2;
   align-self: flex-end;
 }
+@media (min-width: 1440px) {
+  .footer__logo {
+    grid-row: 2/3;
+  }
+}
 .footer__about {
   grid-column: 1/-1;
+  grid-row: 2/3;
 }
 @media (min-width: 1440px) {
   .footer__about {
-    grid-row: 2/3;
     grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
 .footer__phone {
   grid-column: 1/-1;
+  grid-row: 3/4;
 }
 @media (min-width: 1440px) {
   .footer__phone {
-    grid-row: 2/3;
+    grid-row: 3/4;
   }
 }
 .footer__contact {
+  grid-row: 4/5;
   grid-column: 1/-1;
 }
 @media (min-width: 1440px) {
   .footer__contact {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 3/4;
+  }
+}
+.footer__social {
+  display: flex;
+  grid-gap: 1rem;
+  grid-column: 2/4;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .footer__social {
+    grid-column: 4/5;
+    grid-row: 3/4;
   }
 }
 .footer__icon img {
@@ -363,6 +382,9 @@ body {
 }
 .footer__item {
   margin-bottom: 0.5rem;
+}
+.footer__item-icon {
+  width: 45px;
 }
 .footer__logo {
   fill: #fff;

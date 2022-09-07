@@ -2,37 +2,50 @@
   background-color: $veryDarkBlue;
   color: #fff;
   font-family: $secondaryFont;
-  padding: 4rem 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   &__logo {
     grid-column: 1/-1;
     grid-row: 1/2;
     align-self: flex-end;
+    @media (min-width: $laptop) {
+      grid-row: 2/3;
+    }
   }
   &__about {
     grid-column: 1/-1;
+    grid-row: 2/3;
     @media (min-width: $laptop) {
-      grid-row: 2/3;
       grid-column: 2/3;
+      grid-row: 3/4;
     }
   }
   &__phone {
     grid-column: 1/-1;
+    grid-row: 3/4;
     @media (min-width: $laptop) {
-      grid-row: 2/3;
+      grid-row: 3/4;
     }
   }
   &__contact {
+    grid-row: 4/5;
     grid-column: 1/-1;
     @media (min-width: $laptop) {
       grid-column: 3/4;
-      grid-row: 2/3;
+      grid-row: 3/4;
     }
   }
-
+  &__social {
+    display: flex;
+    grid-gap: 1rem;
+    grid-column: 2/4;
+    justify-content: center;
+    @media (min-width: $laptop) {
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+  }
   &__icon {
     img {
       padding-right: 1rem;
@@ -40,6 +53,10 @@
   }
   &__item {
     margin-bottom: 0.5rem;
+    &-icon {
+      // height: 40px;
+      width: 45px;
+    }
   }
   &__logo {
     fill: #fff;
